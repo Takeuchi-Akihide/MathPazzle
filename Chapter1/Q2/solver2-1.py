@@ -4,6 +4,9 @@
 #  Chapter1-2
 #  山手線でスタンプラリー
 
+import sys
+sys.path.append("../")
+from common import combination
 
 def main():
     N = 29      # 駅の数
@@ -27,14 +30,14 @@ def main():
     print(int(count))
 
 
-def combination(n, m):
-    return Factorial(n) / (Factorial(n - m) * Factorial(m))
+# def combination(n, m):
+#     return Factorial(n) / (Factorial(n - m) * Factorial(m))
 
-def Factorial(num):
-    if num <= 0:
-        return 1
-    else:
-        return Factorial(num - 1) * num
+# def Factorial(num):
+#     if num <= 0:
+#         return 1
+#     else:
+#         return Factorial(num - 1) * num
 
 
 
